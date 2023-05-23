@@ -36,3 +36,18 @@
     max-width: 100%;
     
 }
+#footer,#footer2{
+    background-color: rgb(31, 31, 31);
+    color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#footer2{
+    display: flex;
+    flex-direction: row;
+}
+.img{
+    width: 20%;
+}
