@@ -2,7 +2,13 @@
     width: 85px;
     border-radius: 10px;
 }
+.naveg {
+    margin-top: -1rem;   
+}
 
+.naveg .logo .form{
+    margin-top: 2px;
+}
 #main .carousel-inner img{
     max-height: 70vh;
     object-fit: cover;
@@ -36,7 +42,7 @@
     max-width: 100%;
     
 }
-#footer,#footer2{
+#footer{
     background-color: rgb(31, 31, 31);
     color: rgb(233, 233, 233);
     display: flex;
