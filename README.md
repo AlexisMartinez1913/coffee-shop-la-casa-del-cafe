@@ -1,4 +1,5 @@
-# coffe-shop-la-casa-del-cafe
+# coffee-shop-la-casa-del-cafe
+## Proyecto página web para una panadería
 ### Integrantes
 #### Santiago Mosquera
 #### Jander Buritica
