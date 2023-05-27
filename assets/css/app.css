@@ -8,7 +8,13 @@ html {
     box-sizing: inherit;
   }
  
-  
+  main .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
 
   body { 
     font-family: 'Raleway', sans-serif;
@@ -110,7 +116,8 @@ a {
     margin-top: 2rem;
     margin-left: 6rem;
     border: 1px solid red;
-    background-color: #fff;
+    background-color:#fff;
+    color: black;
  }
 
 .cards .titulo {
@@ -122,4 +129,15 @@ a {
     font-size: 2.4rem;
     
  }
+
+
+
+
+
+
+
+
+
+
+
 
