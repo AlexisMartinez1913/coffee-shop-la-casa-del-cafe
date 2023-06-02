@@ -1,3 +1,12 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#place-time img {
+    width: 100%;
+    border-radius: 50%;
+}
+
 #header img{
     width: 80px;
     border-radius: 10px;
@@ -9,6 +18,13 @@
 .naveg .logo .form{
     margin-top: 2px;
 }
+
+.logo {
+    width: 20%;
+}
+@media screen and(max-width:420px){
+    
+}
 #main .carousel-inner img{
     max-height: 70vh;
     object-fit: cover;
@@ -18,30 +34,96 @@
     position: relative;
 
 }
+
+.margin{
+    margin-top: 6rem;
+}
+
+.size{
+    height: 25rem;
+}
+
 #carousel .overlay{
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0,0.5 );
+    background-color: rgba(0, 0, 1,0.5 );
     color: whitesmoke;
     z-index: 1;
 
+}
+
+#carousel h1{
+    position: absolute;
+    bottom: 3rem;
+    right: 30%;
 }
 #carousel .overlay .container,
 #carousel .overlay .row{
     height: 100%;
 }
 
+/* Gradiente */
+.gradient {
+    height: 2rem;
+    background: linear-gradient(gray,white);
+}
+
+
+/* Testimonios */
 #place-time{
-    background-color: #343a40;
-    color: whitesmoke;
+    color: black;
+    padding: 1rem;
 }
 #place-time img{
     max-width: 100%;
     
 }
+
+.titulo {
+    text-align: center;
+    padding-top:4rem;
+}
+
+
+.titulo_testimonio{
+    text-align: center;
+    margin: 1rem;
+}
+
+.titulo_testimonio+p{
+    text-align: center;
+}
+
+.donar {
+    width: 100%;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: rgb(4, 133, 255);
+    color: white;
+    text-transform: uppercase;
+    transition: 2s;
+}
+
+.donar:hover {
+    background-color: orange;
+    
+    transform: scale(1.1);
+}
+/* Sobre nosotros */
+
+.about-us {
+    box-shadow: 0px 5px 10px 5px black;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1rem;
+}
+
+
+/* Footer */
 #footer{
     background-color: rgb(31, 31, 31);
     color: rgb(233, 233, 233);
@@ -57,6 +139,153 @@ footer a{
     display: flex;
     flex-direction: row;
 }
-.img{
-    width: 20%;
+
+/*Map*/
+.map-container {
+    width: 80%;
 }
+
+/* Video */
+
+/* Media queries */
+@media screen and (max-width:520px) {
+    #header img {
+        display: none;
+    }
+    .margin{
+        margin-top: 2rem;
+    }
+
+    .carousel-inner{
+        height: 400px;
+    }
+
+    .size {
+        object-fit: cover;
+    }
+
+    .video {
+        display: none;
+    }
+}
+
+/*Grid*/
+.contenedor {
+    max-width: 65rem;
+    margin: 2rem auto;
+}
+.grid {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    
+}
+
+.font {
+    font-size: 2rem;
+}
+
+/*Productos*/
+
+.img_container {
+    width:100%;
+}
+
+.producto {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.producto__nombre {
+    font-size: 1rem;
+    color: var(--secundaryFont);
+}
+
+.producto__precio {
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 0;
+    left: 44%;
+    color: var(--secundary);
+}
+
+.producto__nombre,
+.producto__precio {
+    font-family: var(--mainFont);
+    margin: .5rem;
+    text-align: center;
+    line-height: 1.2;
+    
+}
+
+.producto_description {
+    text-align: center;
+    font-family: var(--mainFont);
+    color: black;
+}
+
+.producto_unique{
+    grid-column: 1/2;
+}
+
+.producto_unique div img {
+    object-fit: contain;
+}
+
+.producto__info {
+    position: relative;
+    height: 10rem;
+}
+
+.producto__imagen{
+    width: 100%;
+}
+
+
+
+/*Graficos*/
+
+.grafico {
+    min-height: 30rem;
+    background-color: var(--darkPrimary);
+    padding: 1rem;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    background-size: cover;
+}
+
+.grafico--camisa {
+    grid-row: 2/3;
+    background-image: url(https://www.america-retail.com/static/2021/01/agencia-digitalzacion-mano-tecnologia.jpg);
+}
+
+.grafico--node {
+    background-image: url(https://www.america-retail.com/static/2021/01/agencia-digitalzacion-mano-tecnologia.jpg);
+    grid-row: 8/9;
+}
+
+@media (min-width: 768px) {
+    .grafico--camisa {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    .grafico--node {
+        grid-row: 4/5;
+        grid-column: 2/4;
+    }
+
+    .producto_unique {
+        grid-column: 3/4;
+    }
+}
+

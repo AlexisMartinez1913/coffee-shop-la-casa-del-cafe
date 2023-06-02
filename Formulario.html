@@ -12,41 +12,63 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <header>
-    <nav id="header" class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top naveg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./img/logo-2.jpg" alt="logo cafeteria" class="logo">
-          La Casa Del Café
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="productos.html">Nuestros Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Formulario.html">Agenda un evento</a>
-            </li>
+    <nav id="header" class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-codesandbox" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 7.5v9l-4 2.25l-4 2.25l-4 -2.25l-4 -2.25v-9l4 -2.25l4 -2.25l4 2.25z" />
+                    <path d="M12 12l4 -2.25l4 -2.25" />
+                    <path d="M12 12l0 9" />
+                    <path d="M12 12l-4 -2.25l-4 -2.25" />
+                    <path d="M20 12l-4 2v4.75" />
+                    <path d="M4 12l4 2l0 4.75" />
+                    <path d="M8 5.25l4 2.25l4 -2.25" />
+                  </svg>
+                ElectroShop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Nuestros Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Formulario.html">Registro</a>
+                    </li>
 
-          </ul>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
   <main>
     <!-- <h1 class="text-center">FORMULARIO</h1>
     <h2 class="text-center">Agendamiento De Eventos</h2>
     <p class="text-center">Atendemos todo tipo de evento</p> -->
+
+    
     <section class="form">
       <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
+          <!-- Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M14.872 14.287l6.522 6.52a2.996 2.996 0 0 1 -2.218 1.188l-.176 .005h-14a2.995 2.995 0 0 1 -2.394 -1.191l6.521 -6.522l2.318 1.545l.116 .066a1 1 0 0 0 .878 0l.116 -.066l2.317 -1.545z" stroke-width="0" fill="currentColor" />
+            <path d="M2 9.535l5.429 3.62l-5.429 5.43z" stroke-width="0" fill="currentColor" />
+            <path d="M22 9.535v9.05l-5.43 -5.43z" stroke-width="0" fill="currentColor" />
+            <path d="M12.44 2.102l.115 .066l8.444 5.629l-8.999 6l-9 -6l8.445 -5.63a1 1 0 0 1 .994 -.065z" stroke-width="0" fill="currentColor" />
+          </svg>
+          <h3 class="titulo_testimonio my-4">Registrate</h3>
+          <p><em>Registrate y enterate de las ultimas novedades especiales</em></p>
           <div class="col-12 col-md-5 align-self-center">
             <form>
               <div class="row">
@@ -56,6 +78,15 @@
                       <i class="bi bi-person-fill"></i>
                     </span>
                     <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                      aria-describedby="basic-addon1" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-incognito"></i>
+                    </span>
+                    <input type="password" class="form-control" placeholder="Password" aria-label="Password"
                       aria-describedby="basic-addon1" />
                   </div>
                 </div>
@@ -70,7 +101,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="row">
                 <div class="col-12">
                   <div class="input-group mb-3">
@@ -82,51 +112,10 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">
-                      <i class="bi bi-calendar-day-fill"></i>
-                    </span>
-                    <input type="date" class="form-control" placeholder="Fecha" aria-label="Username"
-                      aria-describedby="basic-addon1" />
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">
-                      <i class="bi bi-clock-fill"></i>
-                    </span>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Selecciona Horario</option>
-                      <option value="1">08:00am - 12:00pm</option>
-                      <option value="2">01:00pm - 04:00pm</option>
-                      <option value="3">05:00pm - 09:00pm</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">
-                      <i class="bi bi-signpost-2-fill"></i>
-                    </span>
-                    <input type="text" class="form-control" name="Dirección" id="Dirección"
-                      placeholder="Dirección Del Evento" />
-                  </div>
-                </div>
-              </div>
-              <div class="row container-fluid">
-                <button class="btn btn-dark" type="submit">AGENDAR</button>
+              <div class="row mx-3">
+                <button class="btn btn-dark" type="submit">Registrar</button>
               </div>
             </form>
-          </div>
-          <div class="col-12 col-md-3 align-self-center">
-            <h3>AGENDA TU EVENTO</h3>
-            <p>Atendemos Todo Tipo De Eventos</p>
-            <img src="./img/Logo.jpg" alt="Logo" class="img-fluid w-100" />
           </div>
         </div>
       </div>
@@ -135,11 +124,12 @@
 </body>
 <hr />
 
+<!-- Footer -->
 <footer id="footer" class="pb-4 pt-4 my-1">
   <div class="container-fluid">
     <div class="row text-center">
       <div class="col-12 col-lg ">
-        <p>La Casa Del Café</p>
+        <p>ElectroShop</p>
         <p>Todos los derechos reservados.</p>
       </div>
       <div class="col-12 col-lg">
@@ -148,18 +138,7 @@
       </div>
       <div class="col-12 col-lg">
         <p>Medellín - Antioquía</p>
-        <p>Barrio Poblado</p>
-        <p>Cl 24 #43F-73</p>
       </div>
-      <div class="col-12 col-lg">
-        <p>Creado por:</p>
-        <a href="https://github.com/MejiaLuigi">Luis Mejia</a><br>
-        <a href="https://github.com/MoscoSR">Santiago Mosquera</a><br>
-        <a href="https://github.com/AlexisMartinez1913">J Alexis Martinez</a><br>
-        <a href="https://github.com/Jander937">Jander Buritica</a>
-      </div>
-
-
     </div>
   </div>
 
